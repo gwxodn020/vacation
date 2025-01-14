@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="c">클릭</button>
+    <script>
+        document.getElementById('c').addEventListener('click', function() {
+            this.style.color = this.style.color === 'black' ? 'red' : 'black';
+        });
+    </script>
+</body>
+</html>
