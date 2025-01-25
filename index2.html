@@ -14,7 +14,7 @@
             background-color: #f5f5f5;
         }
         
-        #to {
+        #t {
             padding: 10px 10px;
             background-color: #4a90e2;
             color: white;
@@ -22,11 +22,11 @@
             border-radius: 5px;
         }
         
-        #to:hover {
+        #t:hover {
             background-color: #2179a2;
         }
         
-        #to2 {
+        #to {
             position: fixed;
             bottom: 50px;
             left: 50%;
@@ -40,19 +40,19 @@
             transition: opacity 0.5s ease, bottom 0.5s ease;
         }
         
-        #to2.show {
+        #to.show {
             opacity: 1; 
-            bottom: 70px;
+            bottom: 100px;
         }
     </style>
 </head>
 <body>
-    <button id="to">클릭하면 토스트 메시지가 나옵니다!</button>
-    <div id="to2">토스트 메시지입니다!</div> 
+    <button id="t">클릭하면 토스트 메시지가 나옵니다!</button>
+    <div id="to">토스트 메시지입니다!</div> 
     
     <script>
-        document.getElementById('to').addEventListener('click', () => {
-            const toast = document.getElementById('to2');
+        document.getElementById('t').addEventListener('click', () => {
+            const toast = document.getElementById('to');
             toast.classList.add('show');
             setTimeout(() => {
                 toast.classList.remove('show');
